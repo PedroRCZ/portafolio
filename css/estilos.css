@@ -1,0 +1,290 @@
+
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: normal;
+}
+
+h1{
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: -.2px;
+    color: white;
+    margin: 0;
+}
+
+h1 strong{
+    color: teal;
+}
+
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: "source sans pro", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+.hero{
+    height: 300px;
+    background-color: #1b2127;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    object-fit: cover;
+}
+
+.portfolio {
+    background: #fafafa;
+    padding: 20;
+}
+
+.project{
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    margin-bottom: 15px;
+    /*  margin-right: ;*/
+    padding: 20px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-course {
+    margin: 10px 0;
+  }
+  
+.project-date {
+    margin: 10px 0;
+  }
+  
+.project-url {
+    margin: 10px 0;
+  }
+  
+.project-description {
+    font-size: 20px;
+  }
+  
+.project strong {
+    font-family: "Fjalla one", sans-serif;
+  }
+  
+.project-title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-top: 10px;
+  }
+  
+.project-details {
+    width: 50%;
+  }
+  
+.project-imageContainer {
+    width: 50%;
+  }
+  
+.project-imageContainer img {
+    max-width: 100%;
+  }
+
+.header{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure{
+    margin: 0;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+
+.header ol{
+    display: flex;
+    height: inherit;
+}
+
+.menu{
+    height: inherit;
+}
+
+.container {
+    max-width: 1000px;
+    flex: 1;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+.header ol li{
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.header a{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.footer{
+    background-color: #1b2127;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.event-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event{
+    border: 1px;
+    margin: 10px;
+    width: 480px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #f4fbff;
+}
+
+.event-img{
+    width: 480px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-detail{
+    margin: 20px 40px;
+    margin-top: -40px;
+    background-color: white;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.event-description{
+    text-align: left;
+}
+
+.event-url{
+    border: 1px solid;
+    padding: 5px 20px;
+    text-decoration: none;
+    color:  #056fff;
+    border-radius: 5px;
+}
+
+.contact{
+    background: #056fff;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-img{
+    width: 150px;
+    height: 40px;
+}
+
+.social-link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+
+.social-link.twitter{
+    background-image: url('../img/twitter.svg');
+}
+.social-link.facebook{
+    background-image: url('../img/facebook.svg');
+}
+.social-link.instagram{
+    background-image: url('../img/instagram.svg');
+}
+.social-link.github{
+    background-image: url('../img/github.svg');
+}
+
+.form-email input{
+    border-color: gray;
+    border-radius: 5px;
+    border-style: solid;
+    padding: 10px 25px 10px 25px;
+    background-image: url('../img/envelope.svg');
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px;
+}
+
+.form-email button{
+    display: block;
+    background: transparent;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 0;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.form-email h3{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.box {
+    width: 50px;
+    height: 50px;
+    border: 1px solid red;
+    margin: 5px;
+    flex-shrink: 0;
+}
