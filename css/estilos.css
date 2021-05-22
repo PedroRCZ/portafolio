@@ -79,7 +79,7 @@ h2 {
 }
 
 .portfolio {
-    background: #fafafa;
+    /* background: #fafafa; */
     padding: 20;
 }
 
@@ -248,7 +248,7 @@ figure{
 .contact{
     background: #056fff;
     color: white;
-    height: 150px;
+    height: 170px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -285,7 +285,7 @@ figure{
     border-color: gray;
     border-radius: 5px;
     border-style: solid;
-    padding: 10px 25px 10px 25px;
+    padding: 10px 25px 10px 30px;
     background-image: url('../img/envelope.svg');
     background-size: 20px 20px;
     background-repeat: no-repeat;
@@ -330,7 +330,7 @@ figure{
     line-height: 40px;
     text-align: center;
     position: fixed;
-    z-index: 4;
+    z-index: 5;
     left: 5px;
     top: 5px;
     color: white;
@@ -351,16 +351,26 @@ figure{
     .hero-img{
         position: absolute;
         z-index: 1;
-        left: 0;
         right: 0;
         top: 0;
+        left: 0;
         bottom: 0;
         width: 100%;
+        filter:  alpha(opacity=50);
+    }
+    #divopacity
+    {
+        z-index: 2;
+        position:absolute;
+        height:100%;
+        width:100%;
+        background: radial-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4), rgba(0,0,0,0.5) 80%);
+        top:0;
+        left: 0;
     }
     h1{
         font-size: 2em;
-        z-index: 2;
-        /* background-color: rgba(0, 0, 0, .5); */
+        z-index: 3;
     }
 }
 
@@ -393,7 +403,7 @@ figure{
     .menu{
         position: fixed;
         background-color: rgba(0, 128, 128, .9);
-        z-index: 3;
+        z-index: 4;
         top: 0;
         left: -100vw;
         width: 100vw;
@@ -419,11 +429,9 @@ figure{
     .project-details{
         width: auto;
     }
-
     .project-course .project-date .project-description{
         margin: .3em 0;
     }
-
     .project-title{
         font-size: 1.5em;
         margin-bottom: .3em;
@@ -438,10 +446,8 @@ figure{
         font-size: 1em;
     }
     .project-description{
-        font-size: .8em;
+        font-size: .9em;
     }
-
-
     .event{
         width: auto;
         flex-shrink: initial;
