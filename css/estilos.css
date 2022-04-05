@@ -1,3 +1,9 @@
+*{
+    font-family: 'Source Sans Pro', system-ui;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 @font-face {
     font-family: 'icomoon';
     src:  url('../fonts/icomoon.eot?hh18qs');
@@ -10,40 +16,8 @@
     font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 .icon-menu:before {
     content: "\e9bd";
-}
-
-svg{
-    fill: black;
-}
-
-body{
-    font-family: 'Source Sans Pro', system-ui;
-    margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5{
-    font-family: 'Fjalla One', system-ui;
-    font-weight: normal;
 }
 
 h1{
@@ -77,9 +51,6 @@ h2 {
     flex-wrap: wrap;
 }
 
-.hero-img {
-    object-fit: cover;
-}
 
 .portfolio {
     /* background: #fafafa; */
@@ -204,6 +175,7 @@ figure{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 30px;
 }
 
 .event-list{
@@ -249,9 +221,7 @@ figure{
 }
 
 .contact{
-    background: #056fff;
     color: white;
-    height: 170px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -265,10 +235,10 @@ figure{
 
 .social-link{
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     margin: 0 10px;
-    background-size: 50px 50px;
+    background-size: 30px 30px;
 }
 
 .social-link.twitter{
@@ -282,6 +252,24 @@ figure{
 }
 .social-link.github{
     background-image: url('../img/github.svg');
+}
+.corazon{
+    background-image: url("../img/corazon.svg");
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 3px;
+    background-size: 15px 15px;
+}
+
+@keyframes latidos {
+    from { transform: none; }
+    50% { transform: scale(1.4); }
+    to { transform: none; }
+}
+.corazon {
+	font-size: 150px;
+	animation: latidos 1s infinite;
 }
 
 .form-email input{
@@ -399,7 +387,7 @@ figure{
         text-decoration: underline;
         margin-bottom: .5em;
     }
-    .header .logo{
+    .logo{
         text-align: center;
     }
 
@@ -472,20 +460,6 @@ figure{
     .event-detail{
         margin: -2em .5em .5em;
         padding: 1em;
-    }
-
-    .contact{
-        height: auto;
-        padding: 1em 0;
-        text-align: center;
-        display: block;
-    }
-
-    .form-email button{
-        margin: 1em auto;
-    }
-    .form-email h3{
-        margin-top: 0;
     }
 
     .footer {
