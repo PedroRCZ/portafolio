@@ -227,10 +227,6 @@ figure{
     text-align: center;
 }
 
-.event-description{
-    text-align: left;
-}
-
 .event-url{
     border: 1px solid;
     margin: 3px;
@@ -347,6 +343,7 @@ figure{
 }
 
 .inner-cursor{
+    z-index: 1;
     position: fixed;
     left: 10px;
     width: 10px;
