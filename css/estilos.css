@@ -2,6 +2,7 @@
     font-family: 'Source Sans Pro', system-ui;
     margin: 0;
     padding: 0;
+    cursor: none;
     box-sizing: border-box;
 }
 ::-webkit-scrollbar {
@@ -343,6 +344,37 @@ figure{
     left: 5px;
     top: 5px;
     color: white;
+}
+
+.inner-cursor{
+    position: fixed;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%, -50%);
+    background-color: #fa7921;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: width 0.5s, height 0.5s;
+}
+
+.inner-cursor.grow{
+    width: 25px;
+    height: 25px;
+    transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor{
+    position: fixed;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    transform: translate(-50%, -50%);
+    border: 1px solid #fa7921;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    pointer-events: none;
 }
 
 /*desktop first*/
