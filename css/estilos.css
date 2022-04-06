@@ -1,5 +1,5 @@
 *{
-    font-family: 'Source Sans Pro', system-ui;
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
     cursor: none;
@@ -25,6 +25,11 @@
 ::-webkit-scrollbar-thumb:active {
     background-color: #999999;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 .navbar ol li a:hover{
     border: 1px solid #fa7921;
     color: #fa7921;
@@ -56,7 +61,6 @@ h1 strong{
 h2 {
     color: #1b2127;
     text-transform: uppercase;
-    font-family: "source sans pro", system-ui;
     font-weight: bold;
     font-size: 24px;
     margin: 20px;
@@ -104,10 +108,6 @@ h2 {
   
 .project-description {
     font-size: 20px;
-  }
-  
-.project strong {
-    font-family: "Fjalla one", system-ui;
   }
   
 .project-title {
@@ -226,6 +226,9 @@ figure{
     padding: 20px;
     text-align: center;
 }
+.event-detail .event-url{
+    margin-top: 8px;
+}
 
 .event-url{
     border: 1px solid;
@@ -255,7 +258,9 @@ figure{
     margin: 0 10px;
     background-size: 30px 30px;
 }
-
+.social-link.linkedin{
+    background-image: url('../img/linkedin.svg');
+}
 .social-link.twitter{
     background-image: url('../img/twitter.svg');
 }
@@ -298,21 +303,6 @@ figure{
     background-position-y: center;
     background-position-x: 5px;
 }
-
-.form-email button{
-    display: block;
-    background: transparent;
-    color: white;
-    border-radius: 5px;
-    padding: 10px 0;
-    width: 100px;
-    margin-top: 10px;
-}
-
-.form-email h3{
-    font-family: 'Source Sans Pro', system-ui;
-}
-
 
 .flexbox {
     display: flex;
@@ -425,7 +415,6 @@ figure{
         top: 0;
         left: -100vw;
         width: 100vw;
-        /* height: 100vh; */
         bottom: 0;
         display: flex;
         align-items: center;
