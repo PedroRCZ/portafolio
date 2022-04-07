@@ -41,9 +41,6 @@ html{
     height: 50%;    
 }
 
-.icon-menu:before {
-    content: "\e9bd";
-}
 
 h1{
     font-size: 40px;
