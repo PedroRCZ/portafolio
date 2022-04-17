@@ -184,6 +184,45 @@ figure{
     padding: 0 20px;
 }
 
+.skill-container{
+    color: white;
+    background-color: #1b2127;
+}
+.skill--container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skill--container h2{
+    width: 100%;
+    color: white;
+}
+.skill--container article{
+    width: 33%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.skill-list--items li{
+    position: relative;
+    width: 50%;
+    margin:10px auto;
+    padding: 5px 0;
+    border: 1px solid #fa7921;
+    border-radius: 8px;
+}
+
+.skill--git{
+    position: absolute;
+    left: 10%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/github.svg');
+}
+
 .footer{
     background-color: #1b2127;
     color: white;
