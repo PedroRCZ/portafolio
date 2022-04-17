@@ -8,6 +8,7 @@
     --fondoOscuro: #1b2127;
     --naranja: #fa7921;
     --clr: #222327;
+    --black: #282623;
 }
 ::-webkit-scrollbar {
     width: 8px; 
@@ -31,10 +32,17 @@ html{
     font-family: 'Quicksand', sans-serif;
     scroll-behavior: smooth;
 }
+ol,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 /* -------------- Fin configuraciones----------- */
 /* ----------   Menú flotante   ---------- */
 .nav-flotante{
     position: fixed;
+    z-index: 3;
     bottom: 0;
     left: 0;
 }
@@ -109,6 +117,7 @@ html{
     position: fixed;
     bottom: 0;
     left: 0;
+    z-index: 2;
     width: 100vw;
     height: 81px;
     border-radius: 5px;
@@ -186,6 +195,43 @@ h1 strong{
 /* ----------  Fin Header   ---------- */
 
 
+/* ----------   Skills  ---------- */
+.skill-container{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 1.4rem;
+    color: white;
+    background-color: var(--fondoOscuro);
+}
+.skill-list {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: auto;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #272e34;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(41, 40, 40, 0.16);
+}
+.skill-list--items{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skill-list--items li{
+    position: relative;
+    width: 45%;
+    margin:10px 5px;
+    padding: 5px 10px;
+    border: 1px solid #fa7921;
+    border-radius: 8px;
+}
+/* ----------  Fin Skills   ---------- */
 
 
 /* ----------   Footer   ---------- */
@@ -194,13 +240,13 @@ footer{
     height: auto;
     padding-bottom: 110px;
     text-align: center;
+    font-weight: 400;
     color: white;
     background-color: var(--fondoOscuro);
 }
 .footer-text{
     padding: 20px 0;
     font-size: 1.6rem;
-    
 }
 .social-link{
     display: inline-block;
