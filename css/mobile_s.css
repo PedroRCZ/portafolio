@@ -236,6 +236,7 @@ h1 strong{
     margin:10px 5px;
     padding: 5px 10px;
     border: 1px solid #fa7921;
+    background-color: rgba(250, 121 ,33, 0.1);
     border-radius: 8px;
 }
 /* ----------  Fin Skills   ---------- */
