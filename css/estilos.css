@@ -401,7 +401,7 @@ figure{
 }
 
 /*desktop first*/
-
+/* 
 @media screen and (max-width: 1024px){
     .container {
         padding: 0 1em;
@@ -539,4 +539,4 @@ figure{
     .hero{
         padding: 2em 1em;
     }
-}
+} */

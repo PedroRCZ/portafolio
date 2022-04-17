@@ -1,6 +1,5 @@
 /* configuraciones  */
 *{
-    font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -28,6 +27,8 @@
     background-color: #999999;
 }
 html{
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
     scroll-behavior: smooth;
 }
 /* -------------- Fin configuraciones----------- */
@@ -72,7 +73,7 @@ html{
     display: block;
     text-align: center;
     line-height: 75px;
-    font-size: 1.5em;
+    font-size: 2.4rem;
     transition: 0.5s;
     color: var(--clr);
 }
@@ -82,8 +83,8 @@ html{
 .nav-container ul li a .nav-text{
     position: absolute;
     font-weight: 400;
-    font-size: 0.75em;
-    letter-spacing: 0.05em;
+    font-size: 1.2rem;
+    letter-spacing:0.08rem;
     color: var(--clr);
     transition: 0.5s;
     opacity: 0;
@@ -152,7 +153,36 @@ html{
 }
 /* ----------   Fin Menú flotante   ---------- */
 
+.header{
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--fondoOscuro);
+}
+.logo-img{
+    width: 150px;
+    height: 40px;
+    margin: 0 auto;
+}
+.hero{
+    width: 100%;
+    height: auto;
+    background-color: var(--fondoOscuro);
+    padding: 0 20px 30px 20px;
+}
+h1{
+    width: 100%;
+    font-size: 2.4rem;
+    letter-spacing: -.2px;
+    line-height: 1.5;
+    color: white;
+}
 
+h1 strong{
+    color: teal;
+}
 
 
 
