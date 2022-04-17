@@ -152,9 +152,10 @@ html{
     transform: translateX(calc(57.59px * 4));
 }
 /* ----------   Fin Menú flotante   ---------- */
-
+/* ----------   Header   ---------- */
 .header{
     width: 100%;
+    margin: -1px;
     height: auto;
     padding: 15px 0;
     display: flex;
@@ -179,16 +180,69 @@ h1{
     line-height: 1.5;
     color: white;
 }
-
 h1 strong{
     color: teal;
 }
+/* ----------  Fin Header   ---------- */
 
 
 
 
-
-
+/* ----------   Footer   ---------- */
 footer{
-    margin-bottom: 130px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 110px;
+    text-align: center;
+    color: white;
+    background-color: var(--fondoOscuro);
 }
+.footer-text{
+    padding: 20px 0;
+    font-size: 1.6rem;
+    
+}
+.social-link{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.social-link.linkedin{
+    background-image: url('../img/linkedin.svg');
+}
+.social-link.twitter{
+    background-image: url('../img/twitter.svg');
+}
+.social-link.facebook{
+    background-image: url('../img/facebook.svg');
+}
+.social-link.instagram{
+    background-image: url('../img/instagram.svg');
+}
+.social-link.github{
+    background-image: url('../img/github.svg');
+}
+.corazon{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 3px;
+    background-image: url("../img/corazon.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@keyframes latidos {
+    from { transform: none; }
+    50% { transform: scale(1.4); }
+    to { transform: none; }
+}
+.corazon {
+	font-size: 150px;
+	animation: latidos 1s infinite;
+}
+/* ----------   Footer   ---------- */
