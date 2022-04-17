@@ -7,7 +7,9 @@
     <title>PedroRCZ4</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/mobile_s.css">
+    <link rel="stylesheet" href="./css/mobile_m.css" media="(min-width: 375px)">
+    <link rel="stylesheet" href="./css/mobile.css" media="(min-width: 400px)">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -15,15 +17,56 @@
     <header class="header">
         <div class="container">
             <figure class="logo">
-                <img class="logo-img" src="img/logo.svg" alt="Logo de htttp://PedroCruz">
+                <img class="logo-img" src="img/logo.svg" alt="Logo de marca">
             </figure>
-            <nav class="menu navbar">
-                <ol>
-                    <li> <a href="#logo" title="Inicio">Inicio</a> </li>
-                    <li> <a href="#portafolio" title="Trabajos">Trabajos</a> </li>
-                    <li> <a href="#footer" title="Sobre mi">Sobre mi</a> </li>
-                </ol>
-            </nav>    
+            <div class="fondo"></div>
+            <section class="nav-flotante">
+                <nav class="nav-container">
+                    <ul>
+                        <li class="list active"> 
+                            <a href="#" title="">
+                                <span class="nav-icon">
+                                    <ion-icon name="home-outline"></ion-icon>
+                                </span>
+                                <span class="nav-text">Inicio</span>
+                            </a> 
+                        </li>
+                        <li class="list"> 
+                            <a href="#portafolio" title="">
+                                <span class="nav-icon">
+                                    <ion-icon name="briefcase-outline"></ion-icon>
+                                </span>
+                                <span class="nav-text">Trabajos</span>
+                            </a> 
+                        </li>
+                        <li class="list"> 
+                            <a href="#" title="Sobre mi">
+                                <span class="nav-icon">
+                                    <ion-icon name="rocket-outline"></ion-icon>
+                                </span>
+                                <span class="nav-text">Skills</span>
+                            </a> 
+                        </li>
+                        <li class="list"> 
+                            <a href="#experiencia" title="Sobre mi">
+                                <span class="nav-icon">
+                                    <ion-icon name="school-outline"></ion-icon>
+                                </span>
+                                <span class="nav-text">certificados</span>
+                            </a> 
+                        </li>
+                        <li class="list"> 
+                            <a href="#footer" title="Sobre mi">
+                                <span class="nav-icon">
+                                    <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                                </span>
+                                <span class="nav-text">Contactare</span>
+                            </a> 
+                        </li>
+                        <div class="indicator"></div>
+                    </ul>
+                </nav>    
+            </section>
         </div>
     </header>
     <div class="inner-cursor"></div>
@@ -61,10 +104,10 @@
                             href="https://github.com/PedroRCZ/serverSigCamaronera">Código Back</a>
                         </div>
                     </div>
-                <figure class="project-imageContainer">
+                <!-- <figure class="project-imageContainer">
                     <img class="project-image" src="img/what-fish.jpg" alt="Imagen de proyecto" width="500">
                     
-                </figure>
+                </figure> -->
                 <!-- <p class="project-url"> <small> <strong>Puedese verlo en:</strong>  <a target="_blank" href="https://sig-camaronera-pedrorcz.vercel.app/"> Laquila </a> </small></p> -->
                 
                 </article>
@@ -82,9 +125,9 @@
                             <a class="event-url" target="_blank" href="https://play.google.com/store/apps/details?id=apps.ppax.recetafish&hl=es_EC&gl=US">CookFish</a>
                         </div>
                     </div>
-                <figure class="project-imageContainer">
+                <!-- <figure class="project-imageContainer">
                     <img class="project-image" src="img/what-fish.jpg" alt="Imagen de proyecto" width="500">
-                </figure>
+                </figure> -->
                 
                 </article>
 
@@ -135,9 +178,9 @@
 
             <div class="container">
                 <article class="event">
-                    <figure class="event-imageContainer">
+                    <!-- <figure class="event-imageContainer">
                         <img class="event-img" src="https://i.imgur.com/ongPafz.jpg" alt="imagen de Experiencia" width="500">
-                    </figure>
+                    </figure> -->
                     <div class="event-detail">
                         <h3 class="event-title" >Creación de Páginas Web y Tienda Virtual</h3>
                         <p class="event-description">Modalidad Online emitido por El gobierno Autónomo Centralizado Provincial
@@ -147,9 +190,9 @@
                 </article>
         
                 <article class="event">
-                    <figure class="event-imageContainer">
+                    <!-- <figure class="event-imageContainer">
                         <img class="event-img" src="https://i.imgur.com/KQmYW3T.jpg" alt="imagen de Experiencia" width="500">
-                    </figure>
+                    </figure> -->
                     <div class="event-detail">
                         <h3 class="event-title" >Curso profesional de git y github</h3>
                         <p class="event-description">Modalidad Online emitido por Platzi en 2022</p>
@@ -158,9 +201,9 @@
                 </article>
         
                 <article class="event">
-                    <figure class="event-imageContainer">
+                    <!-- <figure class="event-imageContainer">
                         <img class="event-img" src="https://i.imgur.com/JH2323v.jpg" alt="imagen de Experiencia" width="500">
-                    </figure>
+                    </figure> -->
                     <div class="event-detail">
                         <h3 class="event-title" >Curso Práctico de FrontEnd Developer</h3>
                         <p class="event-description">Modalidad Online emitido por Platzi en 2022</p>
@@ -169,9 +212,9 @@
                 </article>
 
                 <article class="event">
-                    <figure class="event-imageContainer">
+                    <!-- <figure class="event-imageContainer">
                         <img class="event-img" src="https://i.imgur.com/IwImYUW.jpg" alt="imagen de Experiencia" width="500">
-                    </figure>
+                    </figure> -->
                     <div class="event-detail">
                         <h3 class="event-title" >Retoque digital Publicitario</h3>
                         <p class="event-description">Modalidad Online emitido por Crehana en el 2020</p>
@@ -205,5 +248,7 @@
         </div>
     </footer>
     <script src="js/javascript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

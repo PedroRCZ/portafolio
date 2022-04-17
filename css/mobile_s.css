@@ -1,0 +1,164 @@
+/* configuraciones  */
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --fondoOscuro: #1b2127;
+    --naranja: #fa7921;
+    --clr: #222327;
+}
+::-webkit-scrollbar {
+    width: 8px; 
+    height: 30%;    /* Tamaño del scroll en vertical */
+     /*height: 8px;    Tamaño del scroll en horizontal */
+    /*display: none;   Ocultar scroll */
+}
+::-webkit-scrollbar-thumb {
+    background: #1b2127;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #455768;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* -------------- Fin configuraciones----------- */
+/* ----------   Menú flotante   ---------- */
+.nav-flotante{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.nav-container{
+    position: relative;
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    border-radius: 10px;
+    background: white;
+}
+.nav-container ul{
+    width: 90%;
+    display: flex;
+}
+.nav-container ul li{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+.nav-container ul li a{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 500;
+}
+.nav-container ul li a .nav-icon{
+    position: relative;
+    display: block;
+    text-align: center;
+    line-height: 75px;
+    font-size: 1.5em;
+    transition: 0.5s;
+    color: var(--clr);
+}
+.nav-container ul li.active a .nav-icon{
+    transform: translateY(-32px);
+}
+.nav-container ul li a .nav-text{
+    position: absolute;
+    font-weight: 400;
+    font-size: 0.75em;
+    letter-spacing: 0.05em;
+    color: var(--clr);
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+.nav-container ul li.active a .nav-text{
+    opacity: 1;
+    transform: translateY(10px);
+}
+.indicator{
+    position: absolute;
+    top: -50%;
+    left: 3.59%;
+    width: 70px;
+    height: 70px;
+    background: var(--naranja);
+    border-radius: 50%;
+    border: 6px solid var(--clr);
+    transition: 0.5s;
+}
+.fondo{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 81px;
+    border-radius: 5px;
+    background-color: var(--fondoOscuro);
+}
+.indicator::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 30px;
+    box-shadow: 1px -10px 0 0 var(--fondoOscuro);
+}
+.indicator::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 30px;
+    box-shadow: -1px -10px 0 0 var(--fondoOscuro);
+}
+.nav-container ul li:nth-child(1).active ~ .indicator{
+    transform: translateX(calc(70px * 0));
+}
+.nav-container ul li:nth-child(2).active ~ .indicator{
+    transform: translateX(calc(57.59px * 1));
+}
+.nav-container ul li:nth-child(3).active ~ .indicator{
+    transform: translateX(calc(57.59px * 2));
+}
+.nav-container ul li:nth-child(4).active ~ .indicator{
+    transform: translateX(calc(57.59px * 3));
+}
+.nav-container ul li:nth-child(5).active ~ .indicator{
+    transform: translateX(calc(57.59px * 4));
+}
+/* ----------   Fin Menú flotante   ---------- */
+
+
+
+
+
+
+
+
+footer{
+    margin-bottom: 130px;
+}
