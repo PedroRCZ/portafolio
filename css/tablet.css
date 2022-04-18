@@ -23,3 +23,24 @@ h2 {
 .event-title--select{
     left: -21px;
 }
+
+
+.portfolio .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio .container h2{
+    width: 100%;
+}
+.project-container{
+    width: 45%;
+}
+.project-container .project-details {
+    width: 100%;
+}
+
+.event-list-titulo{
+    margin: 30px 0;
+}
