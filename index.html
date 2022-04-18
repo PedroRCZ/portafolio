@@ -40,7 +40,7 @@
                             </a> 
                         </li>
                         <li class="list"> 
-                            <a href="#skills" title="Sobre mi">
+                            <a href="#skill" title="Sobre mi">
                                 <span class="nav-icon">
                                     <ion-icon name="rocket-outline"></ion-icon>
                                 </span>
@@ -84,50 +84,63 @@
     
         <section id="portafolio" class="portfolio">
             <div class="container">
-                <h2>Portafolio (Proyectos Destacados)</h2>
-
-                <article class="project">
+                <h2>Proyectos Destacados</h2>
+                <article class="project-container">
+                    <figure class="project-imageContainer">
+                        <img class="project-image" src="img/what-fish.jpg" alt="Imagen de proyecto" width="500">  
+                    </figure>
                     <div class="project-details">
                         <h3 class="project-title">SIG para Camaronera</h3>
                         <h5 class="project-course" > Node.js / Express / Angular / PotgreSQL / TypeScript</h5>
-                        <p class="project-date"> <small> <strong> Fecha:</strong> 14/04/2021</small></p>
+                        <div class="project-url">
+                            <ul class="project-url--list">
+                                <li>
+                                    <a class="event-url" target="_blank" 
+                                    href="https://sig-camaronera-pedrorcz.vercel.app/">Ver App</a>
+                                </li>
+                                <li>
+                                    <a class="event-url" target="_blank" 
+                                    href="https://github.com/PedroRCZ/Sig-Camaronera">Código Front</a>
+                                </li>
+                                <li>
+                                    <a class="event-url" target="_blank" 
+                                    href="https://github.com/PedroRCZ/serverSigCamaronera">Código Back</a>
+                                </li>
+                        </div>
                         <p class="project-description"> Proyecto para la asignatura de Sistemas de Información Gerencial de Noveno semestre,
                             el trabajo está enfocado en crear un SIG para una empresa
                             camaronera. Consta de una Front-End desplegado en Vercel utilizando Angular 12, TypeScript y Bootstrap. El Back-End se 
                             consume mediante una Api-Rest implementada con Node.js, Express.js y JavaScript desplegada en Heroku</p>
-                        <div class="project-url">
-                            <a class="event-url" target="_blank" 
-                            href="https://sig-camaronera-pedrorcz.vercel.app/">Ver App</a>
-                            <a class="event-url" target="_blank" 
-                            href="https://github.com/PedroRCZ/Sig-Camaronera">Código Front</a>
-                            <a class="event-url" target="_blank" 
-                            href="https://github.com/PedroRCZ/serverSigCamaronera">Código Back</a>
-                        </div>
+                        <p class="project-date"> <small> <strong> Fecha:</strong> 14/04/2021</small></p>
                     </div>
-                <!-- <figure class="project-imageContainer">
-                    <img class="project-image" src="img/what-fish.jpg" alt="Imagen de proyecto" width="500">
-                    
-                </figure> -->
                 <!-- <p class="project-url"> <small> <strong>Puedese verlo en:</strong>  <a target="_blank" href="https://sig-camaronera-pedrorcz.vercel.app/"> Laquila </a> </small></p> -->
                 
                 </article>
 
-                <article class="project">
+                <article class="project-container">
                     <div class="project-details">
                         <h3 class="project-title">WhatFish</h3>
                         <h5 class="project-course" > Java / Android Studio</h5>
-                        <p class="project-date"> <small> <strong> Fecha:</strong> 05/10/2020</small></p>
                         <!-- <p class="project-url"> <small> <strong>Puedese verlo en:</strong>  <a target="_blank" href="https://play.google.com/store/apps/details?id=apps.ppax.whatfish&hl=es_EC&gl=US"> App WhatFish </a> </small></p> -->
+                        <div class="project-url">
+                            <ul class="project-url--list">
+                                <li>
+                                    <a class="event-url" target="_blank" href="https://play.google.com/store/apps/details?id=apps.ppax.whatfish&hl=es_EC&gl=US">WhatFish</a>
+                                </li>
+                                <li>
+                                    <a class="event-url" target="_blank" href="https://play.google.com/store/apps/details?id=apps.ppax.recetafish&hl=es_EC&gl=US">CookFish</a>
+                                </li>
+                            </ul>
+                            
+                            
+                        </div>
                         <p class="project-description"> Proyecto para la asignatura de Emprendimiento de Octavo semestre,
                             el trabajo está enfocado en crear 2 aplicaciones móviles. </p>
-                        <div class="project-url">
-                            <a class="event-url" target="_blank" href="https://play.google.com/store/apps/details?id=apps.ppax.whatfish&hl=es_EC&gl=US">WhatFish</a>
-                            <a class="event-url" target="_blank" href="https://play.google.com/store/apps/details?id=apps.ppax.recetafish&hl=es_EC&gl=US">CookFish</a>
-                        </div>
+                        <p class="project-date"> <small> <strong> Fecha:</strong> 05/10/2020</small></p>
                     </div>
-                <!-- <figure class="project-imageContainer">
+                <figure class="project-imageContainer">
                     <img class="project-image" src="img/what-fish.jpg" alt="Imagen de proyecto" width="500">
-                </figure> -->
+                </figure>
                 
                 </article>
 
@@ -135,7 +148,7 @@
         </section> 
 
         <!-- Poner Skills -->
-        <section id="skills" class="skill-container">
+        <section id="skill" class="skill-container">
             <section class="container skill--container">
                 <h2>Skill</h2>
                 <article class="skill-list">
