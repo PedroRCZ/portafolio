@@ -1,3 +1,4 @@
+//Pointer personalizado
 let innerCursor = document.querySelector(".inner-cursor");
 let outerCursor = document.querySelector(".outer-cursor");
 
@@ -24,33 +25,11 @@ links.forEach((link) =>{
     });
 })
 
-const ipad= window.matchMedia('screen and (max-width: 767px)')
+//Menú flotante
 
-const menu = document.querySelector('.menu');
-const burgerButton = document.querySelector('#burger-menu');
-ipad.addEventListener( 'chage', function(event){
-    validation(event.target)
-});
-
-function validation(event){
-    if(event.matches){
-        burgerButton.addEventListener('click', hideShow);
-    }else{
-        burgerButton.removeEventListener('click', hideShow);
-        }
-    }
-
-validation(ipad);
-
-function hideShow(){
-    if(menu.classList.contains('is-active')){
-        menu.classList.remove('is-active');
-    }else{
-        menu.classList.add('is-active');
-    }
-}
 
 const list = document.querySelectorAll('.list');
+console.log(list)
 function activeLink(){
     list.forEach((item) =>
     item.classList.remove('active'));
@@ -58,3 +37,35 @@ function activeLink(){
 }
 list.forEach((item) =>
 item.addEventListener('click',activeLink));
+
+
+
+// const menuLink = document.querySelectorAll('.list a[href^="#"]');
+// const observer = new IntersectionObserver(
+//     (entries) =>{
+//         entries.forEach((entry) =>{
+//             const id = entry.target.getAttribute("id");
+//             const menuLink = document.querySelector(`.list a[href="#${id}"]`);
+//             if(entry.isIntersecting){
+//                 // document.querySelector(".menu li.active").classList.remove("active");
+//                 // console.log(document.querySelector(".menu li.active"))
+//                 // console.log(document.querySelector(".menu li a"))
+//                 console.log(menuLink)
+//                 menuLink.classList.add("active")
+//             }
+//         });
+//      },
+//      {rootMargin: "-50% 0px -50% 0px"}
+// );
+
+// menuLink.forEach(menuLink =>{
+//     menuLink.addEventListener('click', function(){
+//         menuLink.classList.remove("menu_opened")
+//     })
+
+//     const hash = menuLink.getAttribute("href");
+//     const target = document.querySelector(hash);
+//     if(target){
+//         observer.observe(target)
+//     }
+// })

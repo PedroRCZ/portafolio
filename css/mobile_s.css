@@ -28,9 +28,9 @@
     background-color: #999999;
 }
 html{
+    scroll-behavior: smooth;
     font-size: 62.5%;
     font-family: 'Quicksand', sans-serif;
-    scroll-behavior: smooth;
 }
 ol,
 ul{

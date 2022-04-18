@@ -1,9 +1,12 @@
-.header {
-    justify-content: start;
+
+section[id]{
+    scroll-margin-top: 99px;
 }
+
 .fondo{
     display: none;
 }
+
 .container {
     max-width: 1000px;
     flex: 1;
@@ -14,20 +17,87 @@
     height: inherit;
     flex-wrap: inherit;
 }
-
+.hero {
+    padding-top: 135px;
+    padding-bottom: 70px;
+}
 h1{
     font-size: 4.0rem;
 }
 h2 {
     margin-left: 0;
 }
+/*---------*/
 
 
+.nav-container ul li.active a .nav-icon {
+    transform: translateY(32px);
+}
+.nav-container ul li.active a .nav-text {
+    opacity: 1;
+    transform: translateY(-13px);
+}
+.indicator {
+    top: 50%;
+}
+.indicator::before {
+    position: relative;
+}
+.indicator::after {
+    position: relative;
+}
+
+.nav-container ul li:nth-child(1).active ~ .indicator{
+    transform: translateX(calc(72px * 0));
+}
+.nav-container ul li:nth-child(2).active ~ .indicator{
+    transform: translateX(calc(72px * 1));
+} 
+.nav-container ul li:nth-child(3).active ~ .indicator{
+    transform: translateX(calc(72px * 2));
+}
+.nav-container ul li:nth-child(4).active ~ .indicator{
+    transform: translateX(calc(72px * 3));
+}
+.nav-container ul li:nth-child(5).active ~ .indicator{
+    transform: translateX(calc(72px * 4));
+}
+/*---------*/
+.header {
+    position: fixed;
+    z-index: 4;
+    justify-content: start;
+}
+
+.nav-container ul li {
+   width: 72px;
+}
+
+.scroll{
+    height: 100px;
+}
+
+.nav-flotante{
+    position: inherit;
+    justify-content: end;
+}
+
+.nav-container ul li a .nav-icon {
+    color: white;
+}
+.nav-container {
+    background: transparent;
+}
+.nav-container ul li a .nav-text {
+    opacity: 1;
+    letter-spacing: 0.001rem;
+    color:white;
+}
 /*-------------*/
 .skill-container{
+    padding-top: 30px;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 30px;
 }
 .skill-container h2{
     width: 100%;
@@ -55,4 +125,8 @@ h2 {
 }
 .event-container--derecha{
     margin-top: 12%;
+}
+
+footer{
+    padding: 20px 0 30px 0;
 }

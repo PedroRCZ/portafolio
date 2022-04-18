@@ -15,18 +15,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <i class="icon-menu burger-button" id="burger-menu" ></i>
     <header class="header">
         <div class="container">
-            <figure class="logo">
+            <figure class="logo" id="logo">
                 <img class="logo-img" src="img/logo.svg" alt="Logo de marca">
             </figure>
             <div class="fondo"></div>
             <section class="nav-flotante">
                 <nav class="nav-container">
-                    <ul>
+                    <ul class="menu">
                         <li class="list active"> 
-                            <a href="#" title="">
+                            <a href="#logo" title="">
                                 <span class="nav-icon">
                                     <ion-icon name="home-outline"></ion-icon>
                                 </span>
@@ -74,7 +73,7 @@
     <div class="inner-cursor"></div>
     <div class="outer-cursor"></div>
     <main>     
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="container">
                 <h1>
                     Hola! Soy <strong>Pedro Cruz</strong> <br> Desarrollador <strong>Full Stack</strong> <br> con pasión por la <strong>Electrónica</strong> y <strong>Astronomía</strong>
@@ -84,7 +83,7 @@
             </div>
         </section> 
     
-        <section id="portafolio" class="portfolio">
+        <section id="portafolio" class="portfolio portafolio">
             <div class="container">
                 <h2>Proyectos Destacados</h2>
                 <article class="project-container">
@@ -150,7 +149,7 @@
         </section> 
 
         <!-- Poner Skills -->
-        <section id="skill" class="skill-container">
+        <section id="skill" class=" skill skill-container">
             <section class="container skill--container">
                 <h2>Skill</h2>
                 <article class="skill-list">
@@ -183,11 +182,11 @@
             </section>
         </section>
 
-        <div id="experiencia" class="event-list-titulo">
+        <section id="experiencia" class=" experiencia event-list-titulo">
             <div class="container">
                 <h2 >Más sobre mi experiencia</h2>
             </div>
-        </div>
+        </section>
 
         <section  class="event-list">
             <div class="event-line">
