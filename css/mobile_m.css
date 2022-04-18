@@ -18,3 +18,8 @@
 .nav-container ul li:nth-child(5).active ~ .indicator{
     transform: translateX(calc(67px * 4));
 }
+
+
+.event-title--select{
+    left: -30px;
+}
