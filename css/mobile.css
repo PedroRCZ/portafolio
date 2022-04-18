@@ -9,7 +9,9 @@
     width: 400px;
 }
 
-
+.indicator {
+    left: 5%;
+}
 .nav-container ul li:nth-child(1).active ~ .indicator{
     transform: translateX(calc(1 * 0));
 }
@@ -24,8 +26,4 @@
 }
 .nav-container ul li:nth-child(5).active ~ .indicator{
     transform: translateX(calc(70px * 4));
-}
-
-.event-title--select{
-    left: -26px;
 }
