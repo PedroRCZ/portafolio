@@ -1,0 +1,25 @@
+.hero{
+    padding: 50px;
+}
+h1{
+    font-size: 3.5rem;
+}
+h2 {
+    font-size: 2.4rem;
+    margin-left: 50px;
+}
+.project-imageContainer{
+    display: flex;
+    justify-content: center;
+}
+.project-container .project-details{
+    width: 500px;
+    margin: 0 auto;
+}
+.event-list{
+    width: 500px;
+    margin: 0 auto;
+}
+.event-title--select{
+    left: -21px;
+}
