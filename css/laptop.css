@@ -73,6 +73,10 @@ h2 {
    width: 72px;
 }
 
+.nav-container{
+    margin: 0;
+}
+
 .scroll{
     height: 100px;
 }
@@ -117,10 +121,10 @@ h2 {
 .event{
     width: 40%;
 }
-.event-select--izquierda{
+.event-select--derecha{
     left: -15%;
 }
-.event-select--derecha{
+.event-select--izquierda{
     left: 104.5%;
 }
 .event-container--derecha{

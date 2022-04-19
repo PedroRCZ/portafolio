@@ -45,9 +45,10 @@ h2 {
     text-transform: uppercase;
     font-weight: bold;
 }
-.project-imageContainer img,
-.event-imageContainer img{
+.project-imageContainer img{
     max-width: 100%;
+    height: 204.64px;
+    object-fit: cover;
 }
 
 /* -------------- Fin configuraciones----------- */
@@ -358,6 +359,18 @@ h1 strong{
     border-radius: 50%;
     background-color: var(--naranja);
 }
+
+.event-url--certificado {
+    display: inline-block;
+    width: auto;
+    margin: 3px 3px;
+    padding: 5px 10px;
+    color: var(--fondoOscuro);
+    border: 1px solid #fa7921;
+    background-color: rgba(250, 121 ,33, 0.1);
+    border-radius: 8px;
+}
+
 /* ----------  Fin Certificaciones   ---------- */
 /* ----------   Footer   ---------- */
 footer{

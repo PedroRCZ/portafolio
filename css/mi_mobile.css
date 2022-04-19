@@ -8,3 +8,24 @@
 .event-title--select{
     left: -33px;
 }
+
+@media screen and (min-width: 375px){
+    .project-imageContainer img{
+        height: 241.3px;
+    }
+}
+@media screen and (min-width: 532px){
+    .project-imageContainer img{
+        height: 274.64px;
+    }
+}
+@media screen and (min-width: 768px){
+    .project-imageContainer img{
+        height: 218.7px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .project-imageContainer img{
+        height: 288.3px;
+    }
+}

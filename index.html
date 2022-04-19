@@ -16,7 +16,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container ">
             <figure class="logo" id="logo">
                 <img class="logo-img" src="img/logo.svg" alt="Logo de marca">
             </figure>
@@ -25,7 +25,7 @@
                 <nav class="nav-container">
                     <ul class="menu">
                         <li class="list active"> 
-                            <a href="#logo" title="">
+                            <a href="#hero" title="">
                                 <span class="nav-icon">
                                     <ion-icon name="home-outline"></ion-icon>
                                 </span>
@@ -61,7 +61,7 @@
                                 <span class="nav-icon">
                                     <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
                                 </span>
-                                <span class="nav-text">Contactare</span>
+                                <span class="nav-text">Contactos</span>
                             </a> 
                         </li>
                         <div class="indicator"></div>
@@ -86,13 +86,67 @@
         <section id="portafolio" class="portfolio portafolio">
             <div class="container">
                 <h2>Proyectos Destacados</h2>
+
                 <article class="project-container">
                     <figure class="project-imageContainer">
-                        <img class="project-image" src="img/what-fish.jpg" alt="Imagen de proyecto" width="500">  
+                        <img class="project-image" src="https://i.imgur.com/n5GrZCE.png" alt="Imagen de proyecto" >  
+                    </figure>
+                    <div class="project-details">
+                        <h3 class="project-title">Monitoreo de KIP's de Gestión energética con ciencia de datos</h3>
+                        <h5 class="project-course" > Node.js / Express / Angular / PostgreSQL / TypeScript</h5>
+                        <div class="project-url">
+                            <ul class="project-url--list">
+                                <!-- <li>
+                                    <a class="event-url" target="_blank" 
+                                    href="https://sig-camaronera-pedrorcz.vercel.app/">Ver App</a>
+                                </li> -->
+                                <li>
+                                    <a class="event-url" target="_blank" 
+                                    href="https://github.com/PedroRCZ/Front_tesis">Código Front</a>
+                                </li>
+                                <li>
+                                    <a class="event-url" target="_blank" 
+                                    href="https://github.com/PedroRCZ/Tesis_back">Código Back</a>
+                                </li>
+                        </div>
+                        <p class="project-description">Tesis de titulación consiste en la implementación de sistema 
+                            web, que integre un dashboard que permita la visualización del 
+                            comportamiento de KPI's de gestión energética 
+                            en tiempo real y con data histórica, También consta con un 
+                            generador de datos que simulará los datos que alimentaran al dashboard.</p>
+                        <p class="project-date"> <small> <strong> Fecha:</strong> 25/02/2022</small></p>
+                    </div>
+                </article>
+
+                <article class="project-container">
+                    <figure class="project-imageContainer">
+                        <img class="project-image" src="https://i.imgur.com/obm0BN5.png" alt="Imagen de proyecto" >  
+                    </figure>
+                    <div class="project-details">
+                        <h3 class="project-title">Bio-Oro</h3>
+                        <h5 class="project-course" >JavaScript / HTML /  Python / Django / Css</h5>
+                        <div class="project-url">
+                            <ul class="project-url--list">
+                                <li>
+                                    <a class="event-url" target="_blank" 
+                                    href="https://github.com/PedroRCZ/proyecto_prefectura">Ver Código</a>
+                                </li>
+                                
+                        </div>
+                        <p class="project-description"> Bio-Oro muestra una colección de información referente a la biodiversidad de la Provincia de El Oro en Ecuador.
+                            Cuenta con datos de especies de flora, fauna y áreas naturales, además de proporcionar contenido multimedia disponible para todos los usuarios, enlaces a libros
+                            y la posibilidad de agregar nuevas especies.</p>
+                        <p class="project-date"> <small> <strong> Fecha:</strong> 20/09/2021</small></p>
+                    </div>
+                </article>
+
+                <article class="project-container">
+                    <figure class="project-imageContainer">
+                        <img class="project-image" src="https://i.imgur.com/v1JghsF.png" alt="Imagen de proyecto" >  
                     </figure>
                     <div class="project-details">
                         <h3 class="project-title">SIG para Camaronera</h3>
-                        <h5 class="project-course" > Node.js / Express / Angular / PotgreSQL / TypeScript</h5>
+                        <h5 class="project-course" > Node.js / Express / Angular / PostgreSQL / TypeScript</h5>
                         <div class="project-url">
                             <ul class="project-url--list">
                                 <li>
@@ -114,15 +168,12 @@
                             consume mediante una Api-Rest implementada con Node.js, Express.js y JavaScript desplegada en Heroku</p>
                         <p class="project-date"> <small> <strong> Fecha:</strong> 14/04/2021</small></p>
                     </div>
-                <!-- <p class="project-url"> <small> <strong>Puedese verlo en:</strong>  <a target="_blank" href="https://sig-camaronera-pedrorcz.vercel.app/"> Laquila </a> </small></p> -->
-                
                 </article>
 
                 <article class="project-container">
                     <div class="project-details">
                         <h3 class="project-title">WhatFish</h3>
                         <h5 class="project-course" > Java / Android Studio</h5>
-                        <!-- <p class="project-url"> <small> <strong>Puedese verlo en:</strong>  <a target="_blank" href="https://play.google.com/store/apps/details?id=apps.ppax.whatfish&hl=es_EC&gl=US"> App WhatFish </a> </small></p> -->
                         <div class="project-url">
                             <ul class="project-url--list">
                                 <li>
@@ -140,7 +191,7 @@
                         <p class="project-date"> <small> <strong> Fecha:</strong> 05/10/2020</small></p>
                     </div>
                 <figure class="project-imageContainer">
-                    <img class="project-image" src="img/what-fish.jpg" alt="Imagen de proyecto" width="500">
+                    <img class="project-image" src="https://i.imgur.com/ufPf5Xe.jpg" alt="Imagen de proyecto">
                 </figure>
                 
                 </article>
@@ -192,50 +243,54 @@
             <div class="event-line">
             </div>
             <div class="event-container">
+
+                <article class="event event-container--izquierda">
+                    <div class="event-detail">
+                        <h3 class="event-title" ><span class="event-title--select event-select--izquierda "></span>Curso Práctico de JavaScript</h3>
+                        <p class="event-description">Modalidad Online emitido por Platzi en 2022</p>
+                        <a class="event-url event-url--certificado" target="_blank" href="https://platzi.com/p/PedroRCZ/curso/2327-javascript-practico/diploma/detalle/">Ver credencial</a>
+                    </div>
+                </article>
+
                 <article class="event event-container--derecha">
-                    <!-- <figure class="event-imageContainer">
-                        <img class="event-img" src="https://i.imgur.com/ongPafz.jpg" alt="imagen de Experiencia" width="500">
-                    </figure> -->
+                    <div class="event-detail">
+                        <h3 class="event-title" ><span class="event-title--select event-select--derecha "></span>Curso Práctico de FrontEnd Developer</h3>
+                        <p class="event-description">Modalidad Online emitido por Platzi en 2022</p>
+                        <a class="event-url event-url--certificado" target="_blank" href="https://platzi.com/p/PedroRCZ/curso/2467-frontend-developer/diploma/detalle/">Ver credencial</a>
+                    </div>
+                </article>
+
+                <article class="event event-container--izquierda">
+                    <div class="event-detail">
+                        <h3 class="event-title"><span class="event-title--select event-select--izquierda"></span> Curso profesional de git y github</h3>
+                        <p class="event-description">Modalidad Online emitido por Platzi en 2022</p>
+                        <a class="event-url event-url--certificado" target="_blank" href="https://platzi.com/p/PedroRCZ/curso/1557-git-github/diploma/detalle/">Ver credencial</a>
+                    </div>
+                </article>
+        
+                <article class="event event-container--derecha">
                     <div class="event-detail">
                         <h3 class="event-title" > <span class="event-title--select event-select--derecha"></span> Creación de Páginas Web y Tienda Virtual</h3>
                         <p class="event-description">Modalidad Online emitido por El gobierno Autónomo Centralizado Provincial
                             de El Oro y CONGOPE en el 2020</p>
-                        <!-- <a class="event-url" href="">Ver </a> -->
-                    </div>
-                </article>
-        
-                <article class="event event-container--izquierda">
-                    <!-- <figure class="event-imageContainer">
-                        <img class="event-img" src="https://i.imgur.com/KQmYW3T.jpg" alt="imagen de Experiencia" width="500">
-                    </figure> -->
-                    <div class="event-detail">
-                        <h3 class="event-title"><span class="event-title--select event-select--izquierda"></span> Curso profesional de git y github</h3>
-                        <p class="event-description">Modalidad Online emitido por Platzi en 2022</p>
-                        <a class="event-url" target="_blank" href="https://platzi.com/p/PedroRCZ/curso/1557-git-github/diploma/detalle/">Ver credencial</a>
-                    </div>
-                </article>
-        
-                <article class="event event-container--derecha">
-                    <!-- <figure class="event-imageContainer">
-                        <img class="event-img" src="https://i.imgur.com/JH2323v.jpg" alt="imagen de Experiencia" width="500">
-                    </figure> -->
-                    <div class="event-detail">
-                        <h3 class="event-title" ><span class="event-title--select event-select--derecha "></span>Curso Práctico de FrontEnd Developer</h3>
-                        <p class="event-description">Modalidad Online emitido por Platzi en 2022</p>
-                        <a class="event-url" target="_blank" href="https://platzi.com/p/PedroRCZ/curso/2467-frontend-developer/diploma/detalle/">Ver credencial</a>
+                        <a class="event-url event-url--certificado" href="https://drive.google.com/file/d/1duzAoIcACw8_ISY_80bniWFo5zUc1-lv/view?usp=sharing">Ver credencial</a>
                     </div>
                 </article>
 
-                <article class="event">
-                    <!-- <figure class="event-imageContainer">
-                        <img class="event-img" src="https://i.imgur.com/IwImYUW.jpg" alt="imagen de Experiencia" width="500">
-                    </figure> -->
+                <article class="event event-container--izquierda">
                     <div class="event-detail">
                         <h3 class="event-title" ><span class="event-title--select event-select--izquierda"></span>Retoque digital Publicitario</h3>
                         <p class="event-description">Modalidad Online emitido por Crehana en el 2020</p>
-                        <a class="event-url" target="_blank" href="https://www.crehana.com/proyecto/pcruz2/58226/cuarto-de-hermano-mayor/">Proyecto 1</a>
-                        <a class="event-url" target="_blank" href="https://www.crehana.com/proyecto/pcruz2/68282/tuga-1/">Proyecto 2</a>
-                        <a class="event-url" target="_blank" href="https://www.crehana.com/proyecto/pcruz2/67697/proyecto-97/">Proyecto 3</a>
+                        <a class="event-url event-url--certificado" target="_blank" href="https://www.crehana.com/proyecto/pcruz2/58226/cuarto-de-hermano-mayor/">Proyecto 1</a>
+                        <a class="event-url event-url--certificado" target="_blank" href="https://www.crehana.com/proyecto/pcruz2/68282/tuga-1/">Proyecto 2</a>
+                        <a class="event-url event-url--certificado" target="_blank" href="https://www.crehana.com/proyecto/pcruz2/67697/proyecto-97/">Proyecto 3</a>
+                    </div>
+                </article>
+                <article class="event event-container--derecha">
+                    <div class="event-detail">
+                        <h3 class="event-title" ><span class="event-title--select event-select--derecha"></span>Conocimientos en herramientas de utilitarios y suite ofimática</h3>
+                        <p class="event-description">Modalidad Presencial emitido por Universidad Técnica de Machala - Carrera de Ingeniería de Sistemas en el 2018</p>
+                        <a class="event-url event-url--certificado" target="_blank" href="https://drive.google.com/file/d/1xEyMG0gAdptcoZ_JWyvMThK8jgny_aXj/view?usp=sharing">Ver credencial</a>
                     </div>
                 </article>
             </div>
