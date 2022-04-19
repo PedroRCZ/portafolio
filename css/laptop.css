@@ -27,6 +27,20 @@ h1{
 h2 {
     margin-left: 0;
 }
+
+.download-cv{
+    margin-top: 30px;
+    display: flex;
+    font-weight: 300;
+    color: white;
+}
+
+.download-cv a{
+    margin-left: 20px;
+    font-size: 1.2rem;
+    color: white;
+}
+
 /*---------*/
 
 

@@ -188,7 +188,7 @@ h2 {
 }
 .logo-img{
     width: 150px;
-    height: 40px;
+    height: 100%;
     margin: 0 auto;
 }
 .hero{
@@ -206,6 +206,25 @@ h1{
 }
 h1 strong{
     color: teal;
+}
+
+.download-cv{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    color: white;
+}
+.download-cv h2{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.download-cv a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
 }
 /* ----------  Fin Header   ---------- */
 
